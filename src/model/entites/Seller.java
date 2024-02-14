@@ -10,7 +10,7 @@ public class Seller implements Serializable {
 	
 	private Integer id;
 	private String name;
-	private String emali;
+	private String email;
 	private Date birthDate;
 	private Double baseSalary;
 	
@@ -19,10 +19,10 @@ public class Seller implements Serializable {
 	public Seller() {
 	}
 
-	public Seller(Integer id, String name, String emali, Date birthDate, Double baseSalary, Department department) {
+	public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department department) {
 		this.id = id;
 		this.name = name;
-		this.emali = emali;
+		this.email = email;
 		this.birthDate = birthDate;
 		this.baseSalary = baseSalary;
 		this.department = department;
@@ -45,11 +45,11 @@ public class Seller implements Serializable {
 	}
 
 	public String getEmali() {
-		return emali;
+		return email;
 	}
 
-	public void setEmali(String emali) {
-		this.emali = emali;
+	public void setEmali(String email) {
+		this.email = email;
 	}
 
 	public Date getBirthDate() {
@@ -95,7 +95,7 @@ public class Seller implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Seller [id=" + id + ", name=" + name + ", emali=" + emali + ", birthDate=" + birthDate + ", baseSalary="
+		return "Seller [id=" + id + ", name=" + name + ", email=" + email + ", birthDate=" + birthDate + ", baseSalary="
 				+ baseSalary + ", department=" + department + "]";
 	}
 }
